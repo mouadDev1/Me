@@ -32,9 +32,13 @@
     <link href="css/style.css" rel="stylesheet">
 
 <script>
- window.onblur = function() {
+window.onblur = function() {
   setTimeout(function() {
-    window.location.reload();
+    var currentHash = window.location.hash; // Get the current URL fragment
+    window.location.reload(); // Refresh the page
+    setTimeout(function() {
+      window.location.hash = currentHash; // Set the URL fragment back to the previous value
+    }, 100); // Adjust the timeout delay as needed (in milliseconds)
   }, 100);
 };
 </script>
@@ -387,7 +391,9 @@
                             <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-11sous.png" data-lightbox="portfolio1"><i class="fa fa-eye"></i></a>
                             <a  href="img/project-11sous2.png" data-lightbox="portfolio1">
                                 <a  href="img/project-11sous3.png" data-lightbox="portfolio1"></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://courageous-paletas-f9e3cb.netlify.app/" target="_blank"><i class="fa fa-link"></i></a>
+                                <section id="specific-section">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://courageous-paletas-f9e3cb.netlify.app/" target="_blank" onclick="refreshAndNavigate(event)"><i class="fa fa-link"></i></a>
+                                 </section>
                             <p class="project-text">OpenAI Article Summarizer</p>
                         </div>
                     </div>
