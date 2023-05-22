@@ -314,7 +314,9 @@
     padding-bottom: 30px !important;
 }
 
-
+.reset-link:hover .fa-link::before {
+    content: "\f0c1"; /* Font Awesome reset icon code */
+  }
 
 /*** Project 1 Portfolio ***/
 #portfolio1-flters li {
