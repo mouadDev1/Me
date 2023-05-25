@@ -1,6 +1,6 @@
 
 :root {
-    --primary: #4b86b4;
+    --primary: #146C94;
     --secondary: #FFC448;
     --light: #FAFAFB;
     --dark: #12141D;
@@ -25,6 +25,13 @@
 }
 
 
+.bgimg {
+    background-image: url("../img/bgIMG.png");
+    background-size: cover; /* Adjust the image size to cover the container */
+    background-position: center; /* Position the image at the center */
+    /* You can add more styling properties as needed */
+  }
+
 /*** Spinner ***/
 #spinner {
     opacity: 0;
@@ -39,6 +46,31 @@
     opacity: 1;
 }
 
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.portfolio-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.portfolio1-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.portfolio1-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
 /*** Button ***/
 .btn {
@@ -79,9 +111,11 @@
 
 /*** Navbar ***/
 .navbar.fixed-top {
-    display: none;
-    transition: .5s;
+   
+    transition: 600s;
 }
+
+
 
 .navbar .navbar-nav .nav-link {
     padding: 20px 15px;
@@ -92,7 +126,7 @@
 }
 
 .navbar .navbar-nav .nav-link:hover,
-.navbar .navbar-nav .nav-link.active {
+.navbar .navbar-nav {
     color: var(--primary);
 }
 
