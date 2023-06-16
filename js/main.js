@@ -116,28 +116,6 @@
     return false;
   });
 
-  // Scroll to bottom button
-  $(window).scroll(function () {
-    var scrollPosition = $(this).scrollTop();
-
-    if (scrollPosition > 300) {
-      $(".back-to-down").fadeIn("slow");
-    } else {
-      $(".back-to-down").fadeOut("slow");
-    }
-  });
-
-  $(".back-to-down").click(function () {
-    $("html, body").animate(
-      { scrollTop: $(document).height() },
-      10,
-      "easeInOutExpo"
-    );
-    return false;
-  });
-
-  /////
-
   // Typed Initiate
   if ($(".typed-text-output").length == 1) {
     var typed_strings = $(".typed-text").text();
