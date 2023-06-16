@@ -8,8 +8,15 @@
 .back-to-top {
   position: fixed;
   display: none;
-  right: 45px;
-  bottom: 45px;
+  right: 15px;
+  bottom: 170px;
+  z-index: 99;
+}
+.back-to-down {
+  position: fixed;
+  display: none;
+  right: 15px;
+  bottom: 115px;
   z-index: 99;
 }
 
@@ -390,6 +397,37 @@
 
 .team-item:hover .team-text div {
   margin-left: 30px;
+}
+
+.button-container {
+  display: inline-block;
+}
+
+.transparent-button {
+  border: 1px solid black;
+  color: #f8f6f4;
+  opacity: 1; /* Set opacity to 1 for full visibility */
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+  background-color: #212a3e;
+}
+
+.transparent-button:hover {
+  opacity: 1;
+  background-color: #f8f6f4;
+}
+.transparent-button:hover .bi-arrow-up {
+  color: #212a3e;
+}
+.transparent-button:hover .bi-arrow-down {
+  color: #212a3e;
+}
+.transparent-button .bi-arrow-up {
+  color: #f8f6f4;
+}
+.transparent-button .bi-arrow-down {
+  color: #f8f6f4;
 }
 
 /*** Testimonial ***/
