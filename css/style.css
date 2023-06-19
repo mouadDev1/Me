@@ -391,6 +391,20 @@
 .team-item:hover .team-text div {
   margin-left: 30px;
 }
+.hidden {
+  display: none;
+}
+
+.img-fluid1 {
+  max-width: 100%;
+  height: auto;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.img-fluid1:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  transform: translateY(-10px);
+}
 
 /*** Testimonial ***/
 .testimonial-left,
