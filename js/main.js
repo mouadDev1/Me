@@ -167,17 +167,17 @@
   );
 
   // img
-  var pic = document.getElementById("pic");
+  // var pic = document.getElementById("pic");
 
-  pic.addEventListener("mouseenter", function () {
-    this.style.boxShadow = "0 20px 40px rgba(0, 0, 0, 0.5)";
-    this.style.transform = "translateY(-10px)";
-  });
+  // pic.addEventListener("mouseenter", function () {
+  //   this.style.boxShadow = "0 20px 40px rgba(0, 0, 0, 0.5)";
+  //   this.style.transform = "translateY(-10px)";
+  // });
 
-  pic.addEventListener("mouseleave", function () {
-    this.style.boxShadow = "none";
-    this.style.transform = "none";
-  });
+  // pic.addEventListener("mouseleave", function () {
+  //   this.style.boxShadow = "none";
+  //   this.style.transform = "none";
+  // });
 
   // Portfolio isotope and filter
   var portfolioIsotope = $(".portfolio-container").isotope({
